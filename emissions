@@ -1,0 +1,90 @@
+import { Box, Heading, Text, Image, Flex, Button } from "@chakra-ui/react";
+import { FaRecycle, FaLeaf, FaChartLine } from "react-icons/fa";
+
+const Index = () => {
+  return (
+    <Box p={8}>
+      <Heading as="h1" size="2xl" mb={8}>
+        AI-Optimized Fossil-Free Steel Production
+      </Heading>
+
+      <Flex mb={12}>
+        <Box flex={1} mr={8}>
+          <Heading size="xl" mb={4}>
+            Minimizing CO2 Emissions with AI
+          </Heading>
+          <Text fontSize="lg" mb={6}>
+            Our AI-driven optimization system analyzes every step of the steel production process to identify opportunities to reduce carbon emissions. By leveraging machine learning models trained on process data, the system can dynamically adjust parameters to minimize fossil fuel consumption and maximize use of renewable energy sources.
+          </Text>
+          <Flex>
+            <Box textAlign="center" mr={12}>
+              <FaRecycle size={48} />
+              <Text mt={2} fontWeight="bold">
+                Circular Economy
+              </Text>
+            </Box>
+            <Box textAlign="center" mr={12}>
+              <FaLeaf size={48} />
+              <Text mt={2} fontWeight="bold">
+                Renewable Energy
+              </Text>
+            </Box>
+            <Box textAlign="center">
+              <FaChartLine size={48} />
+              <Text mt={2} fontWeight="bold">
+                Real-time Optimization
+              </Text>
+            </Box>
+          </Flex>
+        </Box>
+        <Image src="https://images.unsplash.com/photo-1556216576-97cef34659df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMGZhY3RvcnklMjB3aXRoJTIwd2luZCUyMHR1cmJpbmVzfGVufDB8fHx8MTcxMTExOTkzN3ww&ixlib=rb-4.0.3&q=80&w=1080" alt="Steel factory with wind turbines" flex={1} />
+      </Flex>
+
+      <Heading size="xl" mb={4}>
+        How It Works
+      </Heading>
+      <Flex mb={12}>
+        <Box flex={1} mr={8}>
+          <Heading size="lg" mb={2}>
+            1. Data Collection
+          </Heading>
+          <Text fontSize="lg" mb={6}>
+            Sensors throughout the production process collect real-time data on energy consumption, material flows, temperatures and more. This data feeds into the AI optimization models.
+          </Text>
+
+          <Heading size="lg" mb={2}>
+            2. AI Modeling & Simulation
+          </Heading>
+          <Text fontSize="lg" mb={6}>
+            Machine learning models analyze the collected data to uncover complex relationships and predict outcomes. Simulations test the impact of different process configurations to find optimal low-emission solutions.
+          </Text>
+        </Box>
+        <Box flex={1}>
+          <Heading size="lg" mb={2}>
+            3. Automated Adjustments
+          </Heading>
+          <Text fontSize="lg" mb={6}>
+            Based on the AI modeling, the system automatically fine-tunes process parameters in real-time. This could include changing material mix ratios, adjusting furnace temperatures, or diverting energy loads to times of peak renewable supply.
+          </Text>
+
+          <Heading size="lg" mb={2}>
+            4. Continuous Improvement
+          </Heading>
+          <Text fontSize="lg">As the AI system operates 24/7, it keeps learning and adapting to changing conditions. Over time, it discovers new strategies to drive emissions lower and optimize for sustainability.</Text>
+        </Box>
+      </Flex>
+
+      <Heading size="xl" mb={4}>
+        Partner with Us
+      </Heading>
+      <Text fontSize="lg" mb={6}>
+        We are seeking forward-thinking steel manufacturers to pilot our AI optimization system. Be an industry leader in sustainable production. Contact us to learn more:
+      </Text>
+      <Button colorScheme="green" size="lg">
+        Get Started
+      </Button>
+    </Box>
+  );
+};
+
+export default Index;
